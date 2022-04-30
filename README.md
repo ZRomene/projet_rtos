@@ -98,7 +98,7 @@ tempsEnMinutes = (S1.tempsEnMillisecondes) * 0.0000167;
 xQueueReceive(NewStructureQueue, &S1, 0);  
 Serial.print(tempsEnMinutes);
 ```
-## Résultat finale
+## Résultat final
 Le résultat final est sous la forme suivante: 
 ![image](Output.JPG)
 
