@@ -27,7 +27,7 @@ L'entrées des boutons poussoirs sur les pins digitales 2 et 3 . Les boutons pou
 [![N|Solid](https://s3-eu-west-1.amazonaws.com/sdz-upload/prod/upload/boutonPullDown.png)]()
 
 Ce circuit alors a été réalisé pour tester le bon fonctionnement du programme : 
-![image](Circuit.jpg)
+![image](Circuit.JPG)
 
 
 
@@ -100,7 +100,7 @@ Serial.print(tempsEnMinutes);
 ```
 ## Résultat finale
 Le résultat final est alors sous la forme suivante: 
-![image](Output.jpg)
+![image](Output.JPG)
 
 
 
