@@ -78,7 +78,8 @@ qStatus2 =xQueueSend(ValeurBoutonsQueue,&ValButtons,0);
 ```
 La troisième tâche reçoit les valeurs des tâches 1 et 2 et les met dans une structure. Puis elle envoie la structure à la tâche 4. Il faut bien prendre en compte l'utilisation d'un sémaphore dans cette partie et la partie qui suit pour protèger le port série. La fonction millis() est aussi utilisé pour déterminer le temps par rapport l'activation de la carte.
 ```sh
-S1.analogique = ValPotentiometer;                                                    S1.numerique = ValButtons;
+S1.analogique = ValPotentiometer;                                                    
+S1.numerique = ValButtons;
 S1.tempsEnMillisecondes = millis();
 xQueueSend(StructureQueue,&S1,0); 
 ```
