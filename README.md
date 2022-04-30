@@ -99,7 +99,7 @@ xQueueReceive(NewStructureQueue, &S1, 0);
 Serial.print(tempsEnMinutes);
 ```
 ## Résultat finale
-Le résultat final est alors sous la forme suivante: 
+Le résultat final est sous la forme suivante: 
 ![image](Output.JPG)
 
 
