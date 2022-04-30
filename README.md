@@ -84,16 +84,8 @@ xQueueSend(StructureQueue,&S1,0);
 ```
 La quatrième tâche, quant à elle, fait l'affichage de la structure faite à la tâche 3 et envoie cettre dernière à la cinquème tâche.
 ```sh
-xQueueReceive(StructureQueue, &S1,0); 
-   if ( xSemaphoreTake( xSerialSemaphore, ( TickType_t ) 5 ) == pdTRUE )                 
-    {
-         Serial.print("La valeur de potentiometre est : ");
-         Serial.println(S1.analogique);                                                 
-         Serial.print("La valeur réultante des boutons est : ");
-         Serial.println(S1.numerique);                                                      
-         Serial.print("Le temps en millisecondes dés l'activation de la carte est : ");
-         Serial.println(S1.tempsEnMillisecondes);                                       
-         xSemaphoreGive( xSerialSemaphore ); 
+Serial.print("La valeur de potentiometre est : ");
+Serial.println(S1.analogique);                                                  
     }
     xQueueSend(NewStructureQueue, &S1, 0);                                                  
 ```
@@ -101,7 +93,8 @@ xQueueReceive(StructureQueue, &S1,0);
 La cinquéme et la dernière tâche convertit de le temps en milliSecondes en Minutes en la mutlipliant par 0.0000167 c'est la meme chose que diviser par 1000 et 60 .  
 1 Millisecondes = 1.7×10-5 Minutes
 ```sh
-tempsEnMinutes = (S1.tempsEnMillisecondes) * 0.0000167;                                     xQueueReceive(NewStructureQueue, &S1, 0);  
+tempsEnMinutes = (S1.tempsEnMillisecondes) * 0.0000167;                                     
+xQueueReceive(NewStructureQueue, &S1, 0);  
 Serial.print(tempsEnMinutes);
 ```
 ## Résultat finale
