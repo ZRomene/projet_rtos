@@ -23,6 +23,8 @@ Sur la platforme , un prototypage du circuit réel est fait. Et sur lequel le co
 > La carte utilisée est l'Arduino Mega 
 L'entrée de potentiométre est relié à l'entrée analogique A0.
 L'entrées des boutons poussoirs sur les pins digitales 2 et 3 . Les boutons poussoirs sont cablés en pull down.
+
+
 [![N|Solid](https://s3-eu-west-1.amazonaws.com/sdz-upload/prod/upload/boutonPullDown.png)]()
 
 Ce circuit alors a été réalisé pour tester le bon fonctionnement du programme : 
