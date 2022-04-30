@@ -24,7 +24,6 @@ Sur la platforme , un prototypage du circuit réel est fait. Et sur lequel le co
 L'entrée de potentiométre est relié à l'entrée analogique A0.
 L'entrées des boutons poussoirs sur les pins digitales 2 et 3 . Les boutons poussoirs sont cablés en pull down.
 
-
 [![N|Solid](https://s3-eu-west-1.amazonaws.com/sdz-upload/prod/upload/boutonPullDown.png)]()
 
 Ce circuit alors a été réalisé pour tester le bon fonctionnement du programme : 
@@ -34,7 +33,9 @@ Ce circuit alors a été réalisé pour tester le bon fonctionnement du programm
 
 # Dépendance requise
 La bibliothéque freeRTOS doit être installée dans le logiciel Arduino et dans le simulateur afin de bien compiler le code.
+
 [![N|Solid](https://hackster.imgix.net/uploads/image/file/128501/screenshot-from-2016-03-01-110338.png?auto=compress%2Cformat&w=1280&h=960&fit=max)]()
+
 Puis on l'appelle on insérant `--#include <Arduino_FreeRTOS.h>` au début du code.
 
 ## Démarche 
